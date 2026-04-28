@@ -120,38 +120,6 @@ xgboost, lightgbm      # Gradient boosting
 joblib                 # Model serialization
 ```
 
----
-
-## 📁 Repository Structure
-
-```
-├── credit-risk-prediction.ipynb      # Loan default prediction
-├── bank-customer-churn-prediction.ipynb  # Churn analysis
-├── car-features-analysis.ipynb       # Automotive EDA
-├── model.pkl                          # Saved XGBoost model
-└── README.md
-```
-
----
-
-## 📈 Key Takeaways
-
-### Credit Risk
-- XGBoost with threshold tuning (0.4) provides optimal trade-off between identifying defaulters and avoiding false positives
-- Class imbalance requires explicit handling (`class_weight="balanced"` or `scale_pos_weight`)
-
-### Customer Churn
-- Random Forest outperforms logistic regression and SVM for churn prediction
-- Feature engineering (BalanceSalaryRatio, TenureByAge) improves model performance
-- Recall for churners is critical business metric
-
-### Car Analysis
-- Exploratory analysis before modeling is essential for data quality
-- Correlation heatmaps guide feature selection for regression tasks
-- Outlier removal improves model robustness
-
----
-
 ## 👥 Author
 
 Saud Ijaz
